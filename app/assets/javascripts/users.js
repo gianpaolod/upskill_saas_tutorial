@@ -11,7 +11,7 @@ $(document).on('turbolinks:load', function(){
   submitBtn.click(function(event){
     //prevent default submission behavior.
     event.preventDefault();
-    submitBtn.val("Processing").prop('disable', true);
+    submitBtn.val("Processing").prop('disabled', true);
     
     //Collect the credit card fields.
     var ccNum = $('#card_number').val(),
